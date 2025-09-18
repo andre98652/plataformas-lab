@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía de Restaurantes · Favoritos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="statusbar"></div>
+
+    <div class="topbar">
+      <button class="btn ghost" id="backBtn" onclick="goBack('index.html')" aria-label="Atrás">⬅︎</button>
+      <h1 id="screenTitle">Favoritos</h1>
+      <span class="badge">Arequipa</span>
+    </div>
+
+    <div class="section">
+      <p style="color:var(--color-muted);font-size:14px">Aún no tienes restaurantes guardados.</p>
+    </div>
+
+    <nav class="tabbar" role="navigation" aria-label="Barra de navegación inferior">
+      <a class="tab" href="index.html">Inicio</a>
+      <a class="tab active">Favoritos</a>
+      <a class="tab" href="perfil.html">Perfil</a>
+    </nav>
+  </div>
+
+  <script src="common.js"></script>
+</body>
+</html>
