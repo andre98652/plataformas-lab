@@ -137,3 +137,20 @@ body {
   font-size:14px;
   color:#444;
 }
+.tabbar {
+  display:flex;
+  border-top:1px solid #eee;
+  background:#fff;
+}
+.tab {
+  flex:1;
+  text-align:center;
+  padding:12px 0;
+  font-size:14px;
+  color:#6B7280;
+  text-decoration:none;
+}
+.tab.active {
+  color:var(--color-primary);
+  font-weight:600;
+}
