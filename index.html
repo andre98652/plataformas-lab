@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guía de Restaurantes - Home</title>
+  <title>Guía de Restaurantes · Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
+    <div class="statusbar"></div>
+
     <div class="topbar">
-      <h1>Guía de restaurantes</h1>
+      <button class="btn ghost" id="backBtn" onclick="goBack()">⬅︎</button>
+      <h1 id="screenTitle">Guía de restaurantes</h1>
       <span class="badge">Arequipa</span>
     </div>
 
@@ -20,40 +23,39 @@
     </div>
 
     <div class="list">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1541542684-4a1e029d1a98?q=80&w=1200" />
+      <a class="card" href="detalle.html?name=Sabor%20Andino&cuisine=Comida%20peruana&area=Centro&priceTier=$$&avg=45&hero=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1541542684-4a1e029d1a98%3Fq%3D80%26w%3D1200%26auto%3Dformat%26fit%3Dcrop" aria-label="Ver detalle Sabor Andino">
+        <img src="https://images.unsplash.com/photo-1541542684-4a1e029d1a98?q=80&w=1200&auto=format&fit=crop" alt="Restaurante Sabor Andino" />
         <div class="card-body">
-          <h3>Sabor Andino</h3>
-          <div class="rating">★ 4.6</div>
-          <div class="meta">Comida peruana • Centro • $$</div>
+          <div class="title"><h3>Sabor Andino</h3><div class="rating">★ 4.6</div></div>
+          <div class="meta"><span>Comida peruana</span>•<span>Centro</span>•<span>$$</span></div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200" />
+      <a class="card" href="detalle.html?name=La%20Trattoria&cuisine=Italiana&area=Yanahuara&priceTier=$$$&avg=60&hero=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517248135467-4c7edcad34c4%3Fq%3D80%26w%3D1200%26auto%3Dformat%26fit%3Dcrop" aria-label="Ver detalle La Trattoria">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Restaurante La Trattoria" />
         <div class="card-body">
-          <h3>La Trattoria</h3>
-          <div class="rating">★ 4.3</div>
-          <div class="meta">Italiana • Yanahuara • $$$</div>
+          <div class="title"><h3>La Trattoria</h3><div class="rating">★ 4.3</div></div>
+          <div class="meta"><span>Italiana</span>•<span>Yanahuara</span>•<span>$$$</span></div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200" />
+      <a class="card" href="detalle.html?name=Sushi%20Maki&cuisine=Japonesa&area=Cercado&priceTier=$$$&avg=70&hero=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1549880338-65ddcdfd017b%3Fq%3D80%26w%3D1200%26auto%3Dformat%26fit%3Dcrop" aria-label="Ver detalle Sushi Maki">
+        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop" alt="Restaurante Sushi Maki" />
         <div class="card-body">
-          <h3>Sushi Maki</h3>
-          <div class="rating">★ 4.8</div>
-          <div class="meta">Japonesa • Cercado • $$$</div>
+          <div class="title"><h3>Sushi Maki</h3><div class="rating">★ 4.8</div></div>
+          <div class="meta"><span>Japonesa</span>•<span>Cercado</span>•<span>$$$</span></div>
         </div>
-      </article>
+      </a>
     </div>
 
-    <!-- Barra inferior -->
-    <nav class="tabbar">
+    <nav class="tabbar" role="navigation" aria-label="Barra de navegación inferior">
       <a class="tab active">Inicio</a>
       <a class="tab" href="favoritos.html">Favoritos</a>
       <a class="tab" href="perfil.html">Perfil</a>
     </nav>
   </div>
+
+  <script src="common.js"></script>
+  <script> hideBackOnHome(); </script>
 </body>
 </html>
