@@ -3,27 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guía de Restaurantes - Perfil</title>
+  <title>Guía de Restaurantes · Perfil</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
+    <div class="statusbar"></div>
+
     <div class="topbar">
-      <h1>Perfil de usuario</h1>
+      <button class="btn ghost" id="backBtn" onclick="goBack('index.html')" aria-label="Atrás">⬅︎</button>
+      <h1 id="screenTitle">Perfil</h1>
+      <span class="badge">Arequipa</span>
     </div>
 
     <div class="section">
-      <p>Nombre: Ana Pérez</p>
-      <button class="btn primary">🔔 Notificaciones</button>
-      <button class="btn ghost">🗂️ Favoritos</button>
+      <h2>Perfil</h2>
+      <p style="color:var(--color-muted);font-size:14px">Nombre: Ana Pérez</p>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <button class="btn primary">🔔 Notificaciones</button>
+        <a class="btn ghost" href="favoritos.html">🗂️ Favoritos</a>
+      </div>
     </div>
 
-    <!-- Barra inferior -->
-    <nav class="tabbar">
+    <nav class="tabbar" role="navigation" aria-label="Barra de navegación inferior">
       <a class="tab" href="index.html">Inicio</a>
       <a class="tab" href="favoritos.html">Favoritos</a>
       <a class="tab active">Perfil</a>
     </nav>
   </div>
+
+  <script src="common.js"></script>
 </body>
 </html>
